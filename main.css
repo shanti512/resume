@@ -1,0 +1,82 @@
+.main
+{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card
+{
+    width:30%;
+    background-color: rgb(182, 182, 73);
+    text-align: center;
+    height: 300px;
+}
+.data
+{
+    width:65%;
+    background-color: burlywood;
+    
+}
+
+@media (min-device-width:320px) and (max-device-width:480px)
+{
+    .card,
+    .data{
+        width:100%;
+    }
+    .card
+    {
+        display: flex;
+        height:200px;
+    }
+    .ch1,
+    .ch2
+    {
+        width:50%;
+        
+    }
+}
+@media (min-device-width:481px) and (max-device-width:780px)
+{   
+    .main
+    {
+      flex-direction: column ;
+       
+    }   
+    .card,
+    .data
+    {
+        width: 100%;
+    }
+    .ch2{
+        display:flex;
+        justify-content: space-around;
+    }
+    h4{
+        flex:1;
+    }
+    #p1
+    {
+        flex:2
+    }
+    #p2
+    {
+        flex:1
+    }
+    
+}
+
+@media (min-device-width:781px) and (max-device-width:992px)
+{   
+    .main
+    {
+       flex-direction: row-reverse;
+       
+    }  
+    .card
+    {
+        height:320px;
+    } 
+    
+}
